@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+🌍 World Explorer — Fog of War GPS Game
+Um jogo mobile completo em React Native onde o mundo começa desconhecido e você vai revelando cada rua, bairro e ponto turístico que explorar na vida real.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🎮 Features do Jogo
+🗺️ Mapa Fog of War
 
-## Get started
+Mapa começa 100% escuro/desconhecido
+GPS revela tiles (~80m×80m) ao redor conforme você se move
+Rastreamento automático — não precisa apertar play, começa sozinho
+Rastreamento em segundo plano (app fechado continua registrando)
+Salvamento automático a cada 5 segundos
 
-1. Install dependencies
+🏆 Sistema de Conquistas (30+ conquistas)
+Por Exploração (tiles):
 
-   ```bash
-   npm install
-   ```
+Primeiro Passo → Vizinhança → Andarilho → Cartógrafo Amador → Mochileiro → Viajante → 1 Milhão de Passos
 
-2. Start the app
+Por Marcos Mundiais (GPS):
 
-   ```bash
-   npx expo start
-   ```
+🇧🇷 Brasil: Cristo Redentor, Pão de Açúcar, Cataratas do Iguaçu, Amazônia, Pantanal
+🇺🇸 EUA: Estátua da Liberdade
+🇫🇷 França: Torre Eiffel
+🇮🇹 Itália: Coliseu de Roma
+🇨🇳 China: Grande Muralha
+🇵🇪 Peru: Machu Picchu
+🇪🇬 Egito: Pirâmides de Gizé
+🇮🇳 Índia: Taj Mahal
+🇦🇺 Austrália: Ópera de Sydney
+🏔️ Nepal: Monte Everest
+🧊 Polo Norte e Polo Sul
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+muito mais!
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
 
-When you're ready, run:
+Cada marco tem uma curiosidade histórica revelada ao desbloquear.
+Por Distância:
 
-```bash
-npm run reset-project
-```
+1km → 10km → Maratona (42km) → Ultra Runner (100km) → Globo-Trotter (1000km)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+⭐ Sistema de Raridade
+Comum → Incomum → Raro → Épico → Lendário
+📊 Progressão
 
-## Learn more
+Sistema de XP e Níveis (nível sobe conforme conquistas)
+Ranks: Viajante → Desbravador → Cartógrafo → Aventureiro → Explorador Épico → Lenda
+Stats em tempo real: tiles, km², km andados
+Velocidade atual em km/h
 
-To learn more about developing your project with Expo, look at the following resources:
+🔔 Toast de Conquista
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Notificação in-app animada com haptic feedback
+Mostra raridade, XP ganho e curiosidade
+Auto-dismiss em 5 segundos
 
-## Join the community
+👤 Autenticação
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Login e cadastro com validação
+Progresso vinculado à conta (AsyncStorage local, fácil integração com Firebase)
+Perfil com avatar gerado automaticamente
