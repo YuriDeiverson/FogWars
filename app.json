@@ -14,13 +14,11 @@
         "NSLocationWhenInUseUsageDescription": "World Explorer precisa da sua localização para revelar o mapa ao explorar.",
         "NSLocationAlwaysAndWhenInUseUsageDescription": "World Explorer rastreia sua exploração mesmo em segundo plano.",
         "NSLocationAlwaysUsageDescription": "World Explorer rastreia sua exploração em segundo plano.",
-        "UIBackgroundModes": [
-          "location",
-          "fetch"
-        ]
+        "UIBackgroundModes": ["location", "fetch"]
       }
     },
     "android": {
+      "package": "com.yurideiverson.fogwar",
       "adaptiveIcon": {
         "backgroundColor": "#050508",
         "foregroundImage": "./assets/images/android-icon-foreground.png",

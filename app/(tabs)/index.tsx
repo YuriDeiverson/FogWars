@@ -8,7 +8,7 @@ import MapView, { Circle, Polygon, PROVIDER_GOOGLE } from 'react-native-maps';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import { useGameStore } from '@/hooks/useGameStore';
-import { startTracking, stopTracking, getCurrentPosition } from '@/services/LocationService';
+import { startTracking, stopTracking, getCurrentPosition } from '@/services/locationService';
 import { TILE_SIZE } from '@/constants/achievements';
 import type { LocationSubscription } from 'expo-location';
 
